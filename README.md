@@ -73,7 +73,7 @@ The inputs were re-evaluated as follows
 Figure 3.
 
 To understand how much ORGANIZATION contributed to the models accuracy, it was removed and the accuracy results were .7234. Due to the decrease, ORGANIZATION was added back in. This process was then repeated with CLASSIFICATION, USE_CASE, SPECIAL_CONSIDERATIONS, INCOME_AMT AND APPLICAITON_TYPE.  No positive changes in accuracy were noted.
-3. The next step was to evaluate different combinations of neurons, layers, activation kernels and epochs. Please refer to the following matrix, !(imgs/Model_matrix.xlsx). I used a bracketing approach starting with 1 layer and progressing. If the accuracy score improved I followed the changes that caused improvement and when it decreased I went on. Though this does not try every categorical option, it does capture relative trends. Based on this, the best accuracy score obtained is 0.728 but the best accuracy score I could consistently achieve was0.7273 .
+3. The next step was to evaluate different combinations of neurons, layers, activation kernels and epochs. Please refer to the following matrix, !(https://github.com/davidmcbee/Neural_Network_Charity_Analysis/blob/main/Resources/Model_matrix.csv). I used a bracketing approach starting with 1 layer and progressing. If the accuracy score improved I followed the changes that caused improvement and when it decreased I went on. Though this does not try every categorical option, it does capture relative trends. Based on this, the best accuracy score obtained is 0.728 but the best accuracy score I could consistently achieve was0.7273 .
 4. I also compared this neural network to:
     a. A logistics regression model which scored 0.467.
     b. A Random Forest Classifier which scored 0.709.
