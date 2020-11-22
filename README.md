@@ -85,15 +85,14 @@ To understand how much ORGANIZATION contributed to the models accuracy, it was r
      ![](imgs/sig.png)
       Figure 4.
       
-       Using 4 hidden layers with  relu activation function in the first layer and tanh for the three other hidden layers and sigmoid for the output layer resulted in accuracy of 0.793 to 0.7939 and a loss score of 0.4408.  See figure 5.
-     ![](imgs/relu_tanh.png)
-     Figure 5.
+      Using 4 hidden layers with  relu activation function in the first layer and tanh for the three other hidden layers and sigmoid for the output layer resulted in accuracy of 0.793 to 0.7939 and a loss score of 0.4408.  See figure 5.
+![](imgs/relu_tanh.png)
+Figure 5.
      
-    Though I experimented with the number of neurons, for the above 2 scenarios I stuck with the rule of thumb of 2 x the number of features (518) for the
-    first layer, the number of features for the 2nd layer, half that for the 3rd and half that for the 4th. See figure 6.
-    
-    ![](imgs/neurons.png)
-    Figure 6.
+Though I experimented with the number of neurons, for the above 2 scenarios I stuck with the rule of thumb of 2 x the number of features (518) for the
+first layer, the number of features for the 2nd layer, half that for the 3rd and half that for the 4th. See figure 6.
+![](imgs/neurons.png)
+Figure 6.
     
 ## Results
 I did try using NAME without bucketing. This provided 0.99 training accuracy but the prediction results where poor; a case of overfitting.  This models does beat the 75% threshold. Additonally, there are some non-linear aspects to the data. To understand and compare I tried a logistics regression model, score 0.467, a random forest classifier, score 0.779. This indicates more investigation into non-linear models could possibly improve the accuracy and loss scores. 
