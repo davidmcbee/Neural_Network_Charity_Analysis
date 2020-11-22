@@ -79,6 +79,18 @@ To understand how much ORGANIZATION contributed to the models accuracy, it was r
     b. A Random Forest Classifier which scored 0.709.
     c. a SVM linear model which scored 0.720.
     d. a SVM non-linear model using the rbf kernel which scored 0.726
+ 5. Then I brought NAME back into the model. I tried different bucketing quantities and found the best solution at buckets = 4. See the bottom of the spreadsheet for optons tried. I also found that there are two competing best solutions regarding model configuration
+     1. That the input layer using the sigmoid activation function for the 4 hidden layers and the output layer provided accuracy  between 0.791 to 0.794. The random aspect comes into play at the 1,000th decimal. See figure 4.
+     ![](imgs/sig.png)
+     Figure 4.
+     
+     2. Using 4 hidden layers with  relu activation function in the first layer and tanh for the three other hidden layers and sigmoid for the output layer resulted in accuracy of 0.793 to 0.7939 and a loss score of 0.4408.  See figure 5.
+     ![](imgs/relu_tanh.png)
+     Figure 5.
+     
+    6. Though I experimented with the number of neurons, for the above 2 scenarios I stuck with the rule of thumb of 2 x the number of features (518) for the first layer, the number of features for the 2nd layer, half that for the 3rd and half that for the 4th. See figure 6.
+    ![](imgs/neurons.png)
+    Figure 6.
     
 ## Results
-I understand that adding too many neurons can overfit a model. I also understand that after the loss score stabilizes, adding more epochs doesn't have much effect on the score. Having said that, with the top goal of getting to 75% I tried edge conditions to achieve this but failed. Additionally, consistency in accuracy scores varied run to run. That is I achieved a 0.728 score, per the matrix but after 4 different runs the score was more consistently at 0.7273. Based on the SVM non-linear model score of 0.726 I recommend exploring more non-linear options.
+I did try using NAME without bucketing. This provided 0.99 training accuracy but the prediction results where poor; a case of overfitting.  This models does beat the 75% threshold. Additonally, there are some non-linear aspects to the data. To understand and compare I tried a logistics regression model, score 0.467, a random forest classifier, score 0.779. This indicates more investigation into non-linear models could possibly improve the accuracy and loss scores. 
