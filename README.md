@@ -81,8 +81,7 @@ To understand how much ORGANIZATION contributed to the models accuracy, it was r
     d. a SVM non-linear model using the rbf kernel which scored 0.726
  5. Then I brought NAME back into the model. I tried different bucketing quantities and found the best solution at buckets = 4. See the bottom of the spreadsheet for optons tried. I also found that there are two competing best solutions regarding model configuration
      1. That the input layer using the sigmoid activation function for the 4 hidden layers and the output layer provided accuracy  between 0.791 to 0.794.
-     The random aspect comes into play at the 1,000th decimal.
-     See figure 4. 
+     The random aspect comes into play at the 1,000th decimal. See figure 4. 
      ![](imgs/sig.png)
       Figure 4.
      
