@@ -84,10 +84,8 @@ To understand how much ORGANIZATION contributed to the models accuracy, it was r
      The random aspect comes into play at the 1,000th decimal. See figure 4. 
      ![](imgs/sig.png)
       Figure 4.
-     
-     Using 4 hidden layers with  relu activation function in the first layer and tanh for the three other hidden layers and sigmoid for the output layer
-     resulted in accuracy of 0.793 to 0.7939 and a loss score of 0.4408.  See figure 5.
-     
+      
+       Using 4 hidden layers with  relu activation function in the first layer and tanh for the three other hidden layers and sigmoid for the output layer resulted in accuracy of 0.793 to 0.7939 and a loss score of 0.4408.  See figure 5.
      ![](imgs/relu_tanh.png)
      Figure 5.
      
